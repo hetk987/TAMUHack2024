@@ -1,19 +1,37 @@
+## Description:
+Welcome to AirAdvice, an innovative AI-powered travel planning website designed to make your travel experiences truly personalized and memorable. Our platform leverages advanced artificial intelligence to recommend the perfect travel destination based on your unique preferences.
 
-# File Sorter
+## Key Features:
 
-A brief description of what this project does and who it's for
+**Cuisine Preference:**
+Input your favorite cuisines, and AirAdvice will suggest destinations renowned for their culinary delights. Whether you're a foodie or seeking specific dining experiences, we've got you covered.
 
-**What it does:** This project sorts the files in the computer that it is run on based on the file type. The folders that are being sorted and the file destinations can both be configured to the user's preferences. Moreover, it can also reverse previous sorts, so long as the sort data is still in "fileRecords.txt".
+**Activity Choices:**
+Tell us about your preferred activities, be it adventurous outdoor pursuits, cultural explorations, or relaxing beach days. AirAdvice tailors its recommendations to match your interests.
+Budget Considerations:
 
-**Building Process:** This was coded in python using both the shutil and os module. It utilizes various OOP principles such as classes, methods, and instances.
+**Budget:**
+Set your travel budget, and let our AI algorithm curate destinations that align with your financial plans. We optimize for cost-effectiveness without compromising on the quality of your travel experience.
+Additional Information:
 
-**How to use it:** Upon installation, go to the "config.py" file and fill in the respective blank data areas. Once the program is run, if you'd like to undo a previous sort, type "y"; if you'd like to conduct a new sort, type "n".
+**Additional Information:**
+Customize your recommendations further by providing additional information, such as preferred weather conditions, travel companions, and desired trip duration. AirAdvice considers every detail to ensure your trip is perfectly tailored to your needs.
+
+
+##How it Works:
+
+
+The fine-tuned AI engine analyzes your profile and processes vast amounts of data to suggest destinations that match your criteria.
+
+AirAdvice provides interactive itineraries, showcasing recommended activities, restaurants, and accommodations. Modify the itinerary as you wish, and let the AI adjust its suggestions in real-time.
+Community Feedback:
+
+
+##Why AirAdvice?
+
+Eliminate hours of research and planning. Let AirAdvice do the work for you, ensuring a hassle-free and cost-effective trip.
 ## Authors
 
-- [@satvikh](https://www.github.com/satvikh)
-
-
-## Features
-
-- File path choosing
-- Undoing a file sort
+-[@hetk987](https://www.github.com/hetk987) 
+-[@satvikh](https://www.github.com/satvikh)
+-[@benjaminrd28](https://www.github.com/benjaminrd28)
