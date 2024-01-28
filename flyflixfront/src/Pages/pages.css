@@ -21,6 +21,9 @@
   justify-content: center;
   flex-direction: column;
 }
+.captionText{
+  color: '#808080';
+}
 
 .MainText {
   margin: -20px;
