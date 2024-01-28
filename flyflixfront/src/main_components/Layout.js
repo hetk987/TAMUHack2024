@@ -3,10 +3,10 @@ import NavigationBar from './NavigationBar'
 
 const Layout = () => {
     return (
-        <>
+        <main>
             <NavigationBar/>
-         {/*   <Outlet/> */}
-        </>
+            <Outlet/>
+        </main>
     )
 }
 
