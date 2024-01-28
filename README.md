@@ -18,7 +18,7 @@ Additional Information:
 Customize your recommendations further by providing additional information, such as preferred weather conditions, travel companions, and desired trip duration. AirAdvice considers every detail to ensure your trip is perfectly tailored to your needs.
 
 
-##How it Works:
+## How it Works:
 
 
 The fine-tuned AI engine analyzes your profile and processes vast amounts of data to suggest destinations that match your criteria.
