@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
+import { Link } from "react-router-dom";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 const SignUpPage = () => {
+    const [email, setEmail] = useState(null);
+    const [password, setPassword] = useState(null);
+
+    const submitlLogin =  () => {
+        console.log('test');
+        console.log(email);
+    }
+
+
     const loginCard = {
         display:'flex',
         position: 'fixed', 
@@ -15,27 +25,28 @@ const SignUpPage = () => {
     }
     return (
         <div style={loginCard}>
-            <Card style={{width: '600px', height: '400px', border: 'none',}}>
+            <Card style={{width: '600px', height: '400px', borderRadius: '20px', border: 'none',}}>
                 <Card.Body>
                     <Card.Title style={{display:'flex', justifyContent:'center', padding: '1em'}}>
-                        Please Login
+                        Sign Up Below
                     </Card.Title>
-                    <Form>
-                        <div style={{padding: '3em'}}>
-                            <FloatingLabel
-                                controlId="floatingInput"
-                                label="Email address"
-                                className="mb-3"
-                            >
-                                <Form.Control type="email" placeholder="name@example.com" />
-                            </FloatingLabel>
-                            <FloatingLabel controlId="floatingPassword" label="Password">
-                                <Form.Control type="password" placeholder="Password"/>
-                            </FloatingLabel>
-                        </div>
-                    </Form>
-                    <div style={{display:'flex', justifyContent: 'center', marginTop:'3em'}}>
-                        <Card.Text>Don't have an account?</Card.Text>
+                    <div style={{padding: '2em'}}>
+                        <FloatingLabel
+                            controlId="floatingInput"
+                            label="Email address"
+                            className="mb-3"
+                        >
+                            <Form.Control type="email" placeholder="name@example.com" value={email} onChange={e => setEmail(e.target.value)}/>
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingPassword" label="Password">
+                            <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)}/>
+                        </FloatingLabel>
+                    </div>
+                    <div style={{display:'flex', justifyContent:'center'}}>
+                        <button class="button-64" ><span class="text">Sign Up</span></button>
+                    </div>
+                    <div style={{display:'flex', justifyContent: 'center', marginTop:'1.5em'}}>
+                        <Card.Text>Already have an account? Click <Link to="/login">Here</Link></Card.Text>
                     </div>
                 </Card.Body>
             </Card>

@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import QuestionCard from '../components/QuestionCard';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './pages.css'
+// import './pages.css'
+import destinationAPI from '../api/destinationAPI';
+import ResultsContext from '../context/ResultsContext';
 
-const SearchPage = () => {
+const SearchPage = ( {setInfo} ) => {
+    console.log(setInfo);
+    const { updateResults } = useContext(ResultsContext);
+
     const [cusineInput, setCusineInput] = useState(null);
     const [activitiesInput, setActivitiesInput] = useState(null);
     const [budgetInput, setBudgetInput] = useState(null);
@@ -19,7 +24,11 @@ const SearchPage = () => {
         console.log(budgetInput);
         console.log(datesInput);
         console.log(additionalInput);
-
+        destinationAPI(cusineInput, activitiesInput, budgetInput, additionalInput, "5").then( (result) => {
+            console.log(result);
+            localStorage.setItem('results', result);
+            window.location.href = '/results';
+        });
     }
 
     return (
@@ -53,7 +62,11 @@ const SearchPage = () => {
                 </Row>
                 <Row>
                     <div style={{display:'flex', justifyContent:'center', marginTop:'2em'}}>
-                        <button onClick={handleSubmit} class="button-64" style={{fontSize:'2em', backgroundColor:'rgb(255, 255, 255)'}}><span class="text">Find Your Destination</span></button>
+                        <button onClick={handleSubmit} class="button-65" style={{fontSize:'2em', backgroundColor:'rgb(255, 255, 255)'}}>
+                            <a className='button-65'>
+                                <span class="text">Find Your Destination</span>
+                            </a>
+                        </button>
                     </div>
                 </Row>
             </Container>

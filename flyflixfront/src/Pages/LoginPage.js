@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
     const [email, setEmail] = useState(null);
@@ -45,7 +46,7 @@ const LoginPage = () => {
                         <button class="button-64" ><span class="text">Login</span></button>
                     </div>
                     <div style={{display:'flex', justifyContent: 'center', marginTop:'1.5em'}}>
-                        <Card.Text>Don't have an account? Click Here</Card.Text>
+                        <Card.Text>Need  an account? Click <Link to="/signup">Here</Link></Card.Text>
                     </div>
                 </Card.Body>
             </Card>
