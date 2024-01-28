@@ -7,11 +7,11 @@ function NavigationBar() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Navbar.Brand href="/home"><span style={{color:'red'}}>A</span>ero<span style={{color:' #4169E1'}}>A</span>dvice</Navbar.Brand>
+          <Nav>
+            <Nav.Link href="/trips">My Trips</Nav.Link>
+            <Nav.Link href="/results">Results</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

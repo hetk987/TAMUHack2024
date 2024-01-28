@@ -1,0 +1,23 @@
+{
+    "location_1" :{
+        "city" : "Austin",
+        "country" : "USA",
+        "img" : "IMAGE LINK HERE",
+        "cost": "Expected Cost Here",
+        "description" : "Horns down. Aggies are better. College Station rocks. "
+    },
+    "location_2" :{
+        "city" : "Austin",
+        "country" : "USA",
+        "img" : "IMAGE LINK HERE",
+        "cost": "Expected Cost Here",
+        "description" : "Horns down. Aggies are better. College Station rocks. "
+    },
+    "location_3" :{
+        "city" : "Austin",
+        "country" : "USA",
+        "img" : "IMAGE LINK HERE",
+        "cost": "Expected Cost Here",
+        "description" : "Horns down. Aggies are better. College Station rocks. "
+    }
+}
