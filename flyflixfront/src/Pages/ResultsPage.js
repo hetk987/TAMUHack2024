@@ -36,7 +36,7 @@ const resultsInfo = JSON.parse(localStorage.getItem('results'))
     <div className='resultsContainer'>
     <section id="home" className="hero-block">
       <carousel> </carousel>
-       <Carousel style={{bottom:"30px", zIndex:"-1"}}>
+       <Carousel style={{bottom:"20px"}}>
         {(resultsInfo).map(items => {
             if (imgIndex === 3){
                 imgIndex = 0;
