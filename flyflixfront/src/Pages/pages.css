@@ -10,6 +10,10 @@
     font-family: 'AA';
     src: URL('../assets/SwitzeraADF-Regular.ttf') format('truetype');
   }
+  h1.captionColor{
+    font-size: 10em;
+
+  }
   h1 {
     position: relative;
     font-size: 20em;
