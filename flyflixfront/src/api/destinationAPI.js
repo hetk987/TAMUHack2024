@@ -7,7 +7,7 @@ import OpenAI from "openai";
 const apiKey = process.env.API_KEY;
 
 // Initialize OpenAI object with your API key
-const openai = new OpenAI({ apiKey: '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',dangerouslyAllowBrowser: true });
+const openai = new OpenAI({ apiKey: '',dangerouslyAllowBrowser: true });
 
 const destinations = async (activities, budget, additionalInformation, cuisine, days) => {
     const myArray = [];
